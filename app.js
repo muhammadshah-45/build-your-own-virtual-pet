@@ -42,5 +42,30 @@ var pet = {
 
 }
 
+function interactive(){
+
+    
+    while(true){
+    //Ask from user what they want to do
+
+    let action = prompt("What would you like to do? (feed,age,play,etc...");
+    if(action === "feed"){
+        pet.feed();
+        
+    }else if(action === "play"){
+        pet.play();
+    }else if(action === "age"){
+        pet.agePet();
+        
+    }else if(action === "exit"){
+        alert("thanks for taking care of your pet!");
+        break;
+    }else{
+        alert("Invalid action.Please choose another action")
+    }
+}
+
+}
 
 
+interactive()
